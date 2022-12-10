@@ -16,20 +16,21 @@
  */
 
 let home = document.getElementById("score-home");
-let guest = document.getElementById("score-guest");
+let away = document.getElementById("score-away");
 
 let homeScore = 0
-let guestScore = 0
+let awayScore = 0
 
 home.textContent = homeScore
-guest.textContent = guestScore
+away.textContent = awayScore
 
 console.log("home: " + homeScore)
-console.log("guest: " + guestScore)
+console.log("away: " + awayScore)
 
 /* functions */
 
 /* home */
+
 function increment1home() {
     homeScore += 1
     home.textContent = homeScore
@@ -48,32 +49,32 @@ function increment3home() {
     console.log("home: " + homeScore)
 }
 
-/* guest */
+/* away */
 
-function increment1guest() {
-    guestScore += 1
-    guest.textContent = guestScore
-    console.log("guest: " + guestScore)
+function increment1away() {
+    awayScore += 1
+    away.textContent = awayScore
+    console.log("away: " + awayScore)
 }
 
-function increment2guest() {
-    guestScore += 2
-    guest.textContent = guestScore
-    console.log("guest: " + guestScore)
+function increment2away() {
+    awayScore += 2
+    away.textContent = awayScore
+    console.log("away: " + awayScore)
 }
 
-function increment3guest() {
-    guestScore += 3
-    guest.textContent = guestScore
-    console.log("guest: " + guestScore)
+function increment3away() {
+    awayScore += 3
+    away.textContent = awayScore
+    console.log("away: " + awayScore)
 }
 
 /* new game */
 
 function newGame() {
-    guestScore = 0
+    awayScore = 0
     homeScore = 0
     home.textContent = homeScore
-    guest.textContent = guestScore
+    away.textContent = awayScore
     console.log("Reset the counter, new game!")
 }
